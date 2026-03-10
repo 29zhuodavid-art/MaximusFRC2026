@@ -247,11 +247,11 @@ public class RobotContainer {
         joystick.rightTrigger()
         .whileTrue(shooter.getShootCommand());
 
-        /* \
-        joystick.leftTrigger(0.7).a().whileTrue(
-        new AutoAlignToTag(drivetrain)
+    
+        joystick.leftTrigger(0.7)
+        .whileTrue(new AutoAlignToTag(drivetrain)
         );
-        */
+        
         joystick.rightStick()
         .onTrue(battleBus.intakeDrop());
 
